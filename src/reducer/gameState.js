@@ -7,7 +7,7 @@ function gameState(state = defaultState, action) {
     case PLAY:
       let newGameState = state.map((row, i) => {
         return row.map((cell, j) => {
-          if (i === action.rowIndex && j === action.colIndex && cell === "") {
+          if (i === action.rowIndex && j === action.colIndex) {
             return action.player;
           } else {
             return cell;
