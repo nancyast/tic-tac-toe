@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.board {
+  width: 150px;
+}
+.square {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #333;
+  background-color: #fff;
+  float: left;
+  box-sizing: border-box;
+  line-height: 50px;
+  text-align: center;
+}
+button {
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+}
