@@ -9,8 +9,10 @@ class Board extends Component {
   }
 
   handleClick(rowIndex, colIndex) {
-    console.log(this.props.isFinish);
-    if (!this.props.isFinish) {
+    if (
+      !this.props.isFinish &&
+      this.props.gameState[rowIndex][colIndex] === ""
+    ) {
       this.props.play(rowIndex, colIndex);
       setTimeout(() => {
         let newGameState = this.props.gameState;
